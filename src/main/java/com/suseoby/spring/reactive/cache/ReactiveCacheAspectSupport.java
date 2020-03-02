@@ -442,14 +442,14 @@ public class ReactiveCacheAspectSupport extends AbstractCacheInvoker implements 
 		for (Cache cache : context.getCaches()) {
 			if (operation.isCacheWide()) {
 				logInvalidating(context, operation, null);
-				doClear(cache);
+				doClear(cache, false);
 			}
 			else {
 				if (key == null) {
 					key = generateKey(context, result);
 				}
 				logInvalidating(context, operation, key);
-				doEvict(cache, key);
+				doEvict(cache, key, false);
 			}
 		}
 	}
