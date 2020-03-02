@@ -6,7 +6,7 @@ provide reactive cache in Spring
 
 ## Supported Versions
 * java : 1.8 or higher
-* spring boot : 2.1.2-RELEASE or higher
+* spring : 5.1.4-RELEASE or higher
 
 ## Usage
 ### pom.xml
